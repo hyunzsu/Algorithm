@@ -1,7 +1,7 @@
 def solution(numLog):
     result = ""
-    for i in range(len(numLog)):
-        diff = numLog[i] - (numLog[i - 1] if i > 0 else 0)
+    for i in range(len(numLog)):  # 12
+        diff = (numLog[i] - numLog[i - 1]) if i > 0 else 0
 
         if diff == 1:
             result += "w"
