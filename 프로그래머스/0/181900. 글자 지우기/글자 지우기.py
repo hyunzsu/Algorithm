@@ -1,3 +1,5 @@
 def solution(my_string, indices):
-    modified_string = ''.join([char for index, char in enumerate(my_string) if index not in indices])
-    return modified_string
+    answer = ''
+    for i in range(len(my_string)):
+        if i not in indices:answer+=my_string[i]
+    return answer
