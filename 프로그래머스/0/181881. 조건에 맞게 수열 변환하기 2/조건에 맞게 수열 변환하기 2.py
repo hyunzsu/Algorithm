@@ -1,18 +1,18 @@
 def solution(arr):
 	result = 0
-	prev = arr
+	# prev = arr
 	while True:
 		new = []
-		for i in prev:
+		for i in arr:
 			if i >= 50 and i % 2 == 0:
 				i = i // 2
 			elif i < 50 and i % 2 != 0:
 				i = i * 2 + 1
 			new.append(i)
 
-		if prev == new:
+		if arr == new:
 			break
 		else:
-			prev = new 
+			arr = new 
 			result += 1
 	return result
