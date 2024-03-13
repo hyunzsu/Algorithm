@@ -1,11 +1,11 @@
 def solution(num_list):
-    count = 0
-    for num in num_list:
-        while num != 1:
-            if num % 2 == 0:
-                num //= 2
-            else:
-                num -= 1
-                num //= 2
-            count += 1
-    return count
+	res = 0
+	for i in num_list:
+		while i != 1:
+			if i % 2 == 0:
+				i //= 2
+			else:
+				i -= 1
+				i //= 2
+			res += 1
+	return res
