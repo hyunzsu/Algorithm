@@ -1,12 +1,7 @@
 def solution(arr):
-    cnt = 0
-    while len(arr) != 2 ** cnt:
-        if len(arr) == 2 ** cnt:
-            break
-        if len(arr) > 2 ** cnt:
-            cnt += 1
-        else:
-            chan = (2 ** cnt) - len(arr)
-            for _ in range(chan):
-                arr.append(0)
+    cnt = 1
+    while cnt < len(arr):
+        cnt *= 2
+    # 필요한 0의 개수 계산 후 추가
+    arr.extend([0] * (cnt - len(arr)))    
     return arr
