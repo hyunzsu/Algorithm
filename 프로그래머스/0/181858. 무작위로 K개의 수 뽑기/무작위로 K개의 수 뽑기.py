@@ -1,12 +1,10 @@
 def solution(arr, k):
-    answer = []
-    for num in arr:
-        if num not in answer:
-            answer.append(num)
-        if len(answer) == k:
-            break
-    
-    while len(answer) < k:
-        answer.append(-1)
-        
-    return answer
+	res = []
+	for i in arr:
+		if i not in res:
+			res.append(i)
+		if len(res) == k:
+			break
+	while len(res) < k:
+		res.append(-1)
+	return res
