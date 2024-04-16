@@ -1,4 +1,7 @@
 def solution(n):
-    for x in range(2, n):
-        if n % x == 1:
-            return x
+    num = n - 1
+    for i in range(2, num+1):
+        if num % i == 0:
+            result = i
+            break
+    return result
