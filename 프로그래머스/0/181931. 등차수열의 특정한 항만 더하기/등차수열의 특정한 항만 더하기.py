@@ -1,6 +1,6 @@
 def solution(a, d, included):
-    result = 0
-    for i in range(len(included)):
-        if included[i]:
-            result += a + i * d
-    return result
+    res = []
+    for i, b in enumerate(included):
+        if b:
+            res.append(d * i + a)
+    return sum(res)
