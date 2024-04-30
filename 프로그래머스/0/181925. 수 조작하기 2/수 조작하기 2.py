@@ -1,15 +1,6 @@
 def solution(numLog):
-    result = ""
-    for i in range(len(numLog)):  # 12
-        diff = (numLog[i] - numLog[i - 1]) if i > 0 else 0
-
-        if diff == 1:
-            result += "w"
-        elif diff == -1:
-            result += "s"
-        elif diff == 10:
-            result += "d"
-        elif diff == -10:
-            result += "a"
-
-    return result
+    d = {1: 'w', -1: 's', 10: 'd', -10: 'a'}
+    res = ''
+    for i in range(1, len(numLog)):
+        res += d[numLog[i] - numLog[i-1]]
+    return res
