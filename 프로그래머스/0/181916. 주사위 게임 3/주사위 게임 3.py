@@ -1,6 +1,6 @@
 def solution(a, b, c, d):
     nums = [a, b, c, d]
-    counts = [nums.count(i) for i in nums]
+    counts = [nums.count(n) for n in nums]
     if max(counts) == 4:
         return a * 1111
     elif max(counts) == 3:
