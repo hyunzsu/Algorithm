@@ -1,5 +1,5 @@
 def solution(my_strings, parts):
-	result = ''
-	for i, (s, e) in enumerate(parts):
-		result += my_strings[i][s:e+1]
-	return result
+    res = []
+    for i, p in zip(my_strings, parts):
+        res.append(i[p[0]:p[1]+1])
+    return ''.join(res)
