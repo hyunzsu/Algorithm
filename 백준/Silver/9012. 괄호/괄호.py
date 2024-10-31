@@ -1,21 +1,22 @@
-# 정수로 입력받기
 import sys
-n = int(sys.stdin.readline().strip())
-
-for _ in range(n):
-    # 한줄씩 입력받기
-    word = sys.stdin.readline().strip()
-    # 스택 초기화
-    stack = []
-    for char in word:
-      if char == '(':
-          stack.append(char)
-      elif char == ')':
-          if stack and stack[-1] == '(':
-              stack.pop()
-          else:
-              stack.append(char)
-    if not stack:
-        print("YES")
+input=sys.stdin.readline
+N=int(input())
+for i in range(N):
+    ps=input().strip()
+    stack=[]
+    ans=0
+    try:
+        for j in ps:
+            if j=="(":
+                stack.append(0)
+                ans+=1
+            else:
+                stack.pop()
+                ans-=1
+    except:
+        print('NO')
     else:
-        print("NO")
+        if ans==0:
+            print('YES')
+        else:
+            print('NO')
