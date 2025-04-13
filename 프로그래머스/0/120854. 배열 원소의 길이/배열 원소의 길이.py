@@ -1,2 +1,2 @@
 def solution(strlist):
-    return [len(i) for i in strlist]
+    return [len(s) for s in strlist]

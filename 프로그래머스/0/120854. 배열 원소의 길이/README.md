@@ -1,10 +1,10 @@
 # [level 0] 배열 원소의 길이 - 120854 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120854?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120854) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 0.00 ms
+메모리: 9.1 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,11 +16,11 @@
 
 ### 제출 일자
 
-2024년 03월 27일 11:20:03
+2025년 04월 13일 19:00:13
 
 ### 문제 설명
 
-<p>문자열 배열 <code>strlist</code>가 매개변수로 주어집니다. <code>strlist</code> 각 원소의 길이를 담은 배열을 retrun하도록 solution 함수를 완성해주세요.</p>
+<p>문자열 배열 <code>strlist</code>가 매개변수로 주어집니다. <code>strlist</code> 각 원소의 길이를 담은 배열을 return하도록 solution 함수를 완성해주세요.</p>
 
 <hr>
 
