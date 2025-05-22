@@ -1,10 +1,10 @@
 # [level 0] 두 수의 나눗셈 - 120806 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120806?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120806?language=javascript) 
 
 ### 성능 요약
 
-메모리: 9.24 MB, 시간: 0.00 ms
+메모리: 33.4 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 04월 12일 10:56:37
+2025년 05월 22일 21:58:52
 
 ### 문제 설명
 
